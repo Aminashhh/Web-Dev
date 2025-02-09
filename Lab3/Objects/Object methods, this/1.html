@@ -1,0 +1,20 @@
+function makeUser() {
+    return {
+      name: "John",
+      ref: this
+    };
+  }
+  let user = makeUser();
+  alert( user.ref.name ); // What's the result? In strict mode, alert(user.ref.name); throws an error because user.ref is undefined, and accessing .name on undefined causes an error.
+
+
+  function makeUser() {
+    return {
+      name: "John",
+      ref() {
+        return this;
+      }
+    };
+  }
+  let user = makeUser();
+  alert( user.ref().name ); // John

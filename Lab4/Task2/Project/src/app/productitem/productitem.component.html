@@ -1,0 +1,32 @@
+<section class="listing">
+    
+    <div class="listing-top">
+        <div class="carousel">
+            <button class = "carousel-button" (click)="prevSlide()"><img class="carousel-icon" [src]="'assets/back.png'" alt=""></button>
+            <img class = "listing-photo"
+            [src] = "productItem.images[curInd]"
+            alt = "Exterior photo of {{productItem.name}}"
+            crossorigin
+            >
+            <button class = "carousel-button" (click)="nextSlide()"><img class="carousel-icon" [src]="'assets/next.png'" alt=""></button>
+        </div>
+        <a class="listing-top-route" [href]="productItem.link">
+            <h2 class = "listing-text">{{productItem.name}}</h2>
+        </a>
+        <p class = "listing-description">{{productItem.description}}</p>
+    </div>
+    
+    
+    <div class="listing-bottom">
+        <div class="rating-stars">
+            <p class = "listing-rating">{{productItem.rating}}</p>
+            <img class = "rating-star-icon" *ngFor="let star of getRatingStars(productItem.rating)" [src]="'assets/starrating.png'" alt=""/>
+        </div>
+        <div class="share-buttons">
+            <button class = "telega-button button" (click)="shareOnTelega(productItem.name, productItem.link)"><img class = "telega-button-icon button-icon" [src]="'assets/tg.png'">Share on Telegram</button>
+            <button class = "wa-button button" (click)="shareOnWhatsapp(productItem.name, productItem.link)"><img class="wa-button-icon button-icon" [src]="'assets/wa.png'" alt="">Share on WhatsApp</button>
+        </div>
+        
+    </div>
+    
+</section>

@@ -1,0 +1,123 @@
+.listing {
+    background: rgb(255, 255, 255);
+    border-radius: 20px;
+    padding: 20px 20px;
+    /* max-width: 300px; */
+    /* height: 480px; */
+    margin: 20px 20px;
+    text-align: center;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    row-gap: 10px;
+    
+    
+}
+.listing-top{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.listing-top-route{
+    text-decoration: none;
+    color: inherit;
+}
+.listing-top-route:hover{
+    color: #c7b198;
+}
+.listing:hover{
+    transform: scale(1.05);
+    /* cursor: pointer; */
+}
+.listing-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 15px;
+   
+    
+}
+.carousel{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.carousel-button{
+    background: none;
+    border: none;
+}
+.carousel-icon{
+    width: 16px;
+    cursor: pointer;
+}
+.carousel-icon:hover{
+    filter: brightness(0);
+}
+.listing-text {
+    font-size: 20px;
+    text-align: center;
+    font-weight: 500;
+}
+.listing-description {
+    font-size: 10px;
+    color: gray;
+    /* color: rgb(0, 0, 0); */
+    margin-top: 10px;
+    text-align:justify;
+}
+.listing-rating {
+    /* text-align: start; */
+    color: gray;
+    padding-right: 10px;
+    margin: 0;
+}
+.listing-bottom{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    align-items: center;
+    padding-bottom: 10px;
+}
+.share-buttons{
+    display: flex;
+    flex-direction: column;
+}
+
+.button{
+    padding: 10px;
+    background: none;
+    border: #c7b198 2px solid;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    margin: 5px 5px;
+    color: #c7b198;
+    font-size: 12px;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+
+}
+.button:hover{
+    background: #c7b198;
+    color: white;
+    cursor: pointer;
+    .button-icon{
+        filter: brightness(10);
+    }
+}
+
+.button-icon{
+    width: 16px;
+    padding-right: 10px;
+}
+.rating-star-icon{
+    width: 16px;
+    padding: 0 1px;
+}
+.rating-stars{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}

@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+header{
+    
+    padding: 20px 30px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+.store-logo{
+    width: 48px;
+    height: 48px;
+}
+.store-name{
+    color: #132743;
+    margin: 0;
+    font-size: 48px;
+    font-weight: 300;
+    margin-left: 12px;
+    
+}
+.content{
+    padding-top: 30px;
+}
